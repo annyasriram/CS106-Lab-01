@@ -7,8 +7,9 @@
  *   Rating: 1
  */
 int thirdBits(void)
+// Want to get: 0010 0100 1001 0010 0100 1001 0010 0100
 {
-    return 2;
+    return (0x492 << 20) | (0x492 << 8) | (0x49);
 }
 
 int test_thirdBits(void)

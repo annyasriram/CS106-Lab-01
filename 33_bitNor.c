@@ -8,8 +8,9 @@
  *   Rating: 1
  */
 int bitNor(int x, int y)
+// De Morgan's Law: NOT(A + B) = NOT(A) & NOT(B)
 {
-    return 2;
+    return ~x & ~y;
 }
 
 int test_bitNor(int x, int y)

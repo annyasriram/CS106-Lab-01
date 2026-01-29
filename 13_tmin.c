@@ -7,8 +7,10 @@
  *   Rating: 1
  */
 int tmin(void)
+// TMin = -2^n-1
+// TMin = 1000 0000 0000 0000 0000 0000 0000 0000 
 {
-    return 2;
+    return (0x1 << 31);
 }
 
 int test_tmin(void)

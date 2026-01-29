@@ -7,8 +7,10 @@
  *   Rating: 1
  */
 int tmax(void)
+// TMax = 2^n-1 - 1
+// TMax = 0111 1111 1111 1111 1111 1111 1111 1111
 {
-    return 2;
+    return ~(0x1 << 31);
 }
 
 int test_tmax(void)

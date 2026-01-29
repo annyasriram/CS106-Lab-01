@@ -8,8 +8,10 @@
  *   Rating: 1
  */
 int bitAnd(int x, int y)
+// De Morgan's law: NOT(A & B) = NOT(A) + NOT(B)
+// (A & B) = NOT(NOT(A & B)) = NOT(NOT(A) + NOT(B))
 {
-    return 2;
+    return ~(~x | ~y);
 }
 
 int test_bitAnd(int x, int y)

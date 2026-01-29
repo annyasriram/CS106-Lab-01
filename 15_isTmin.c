@@ -8,8 +8,10 @@
  *   Rating: 1
  */
 int isTmin(int x)
+// TMin = 1000 0000 0000 0000 0000 0000 0000 0000 
+// x ^ x = 0
 {
-    return 2;
+    return !((0x1 << 31) ^ x);
 }
 
 int test_isTmin(int x)
